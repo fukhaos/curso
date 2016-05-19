@@ -93,6 +93,9 @@ public class MainActivity extends ActionBarActivity {
                 Tarefa nova_tarefa = new Tarefa(valor);
                 nova_tarefa.save();
 
+                //adiciona na tarefas
+                tarefas.add(nova_tarefa);
+
                 items.add(valor);
                 adapter.notifyDataSetChanged();
             }
